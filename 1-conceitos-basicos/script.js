@@ -4,16 +4,16 @@ console.log("Oiiiii")
 
 // Variáveis
 
-var meu_nome = "Lorrayne"
-var minha_idade = 23
+var meu_nome = "Lorrayne" // valor variável
+var minha_idade = 23 // valor variável
 
 console.log(meu_nome)
 console.log(minha_idade)
 
 // Constantes
 
-const minha_empresa = "Full Estresse"
-const meu_salario = 6000
+const minha_empresa = "Full Estresse" // valor constante
+const meu_salario = 6000 // valor constante
 
 console.log(minha_empresa)
 console.log(meu_salario)
@@ -29,10 +29,26 @@ console.log(array[2])
 var num1 = 10
 var num2 = 5
 
-console.log(num1 + num2)
-console.log(num1 - num2)
-console.log(num1 * num2)
-console.log(num1 / num2)
+console.log(num1 + num2) // soma
+console.log(num1 - num2) // subtração
+console.log(num1 * num2) // multiplicação
+console.log(num1 / num2) // divisão
+console.log(num1 % num2) // resto
+console.log(num1 ** num2) // expoente
+
+var soma = 1 + 2 // soma
+var subtracao = 1 - 2 // subtração
+var multiplicacao = 1 * 2 // multiplicação
+var divisao = 1 / 2 // divisão
+var resto = 1 % 2 // resto
+var expoente = 1 ** 2 // expoente
+
+console.log(soma)
+console.log(subtracao)
+console.log(multiplicacao)
+console.log(divisao)
+console.log(resto)
+console.log(expoente)
 
 // Operadores de Atribuição
 
@@ -50,9 +66,32 @@ var numero2 = 6
 
 if (numero1 == numero2) {
     console.log("igual")
-} else {
+} else if (numero1 === numero2) {
+    console.log("igual até de tipo")
+} else if (numero1 != numero2) {
     console.log("diferente")
+} else if (numero1 !== numero2) {
+    console.log("diferente até de tipo")
+} else if (numero1 < numero2) {
+    console.log("menor que")
+} else if (numero1 > numero2) {
+    console.log("maior que")
+} else if (numero1 <= numero2) {
+    console.log("menor ou igual que")
+} else if (numero1 >= numero2) {
+    console.log("maior ou igual que")
+} else {
+    console.log("acabou!")
 }
+
+// Operadores Lógicos
+
+var letra1 = "x"
+var letra2 = "y"
+
+console.log("x" == "x" && "y" == "y") // AND
+console.log("x" == "x" || "y" == "y") // OR
+console.log(!("a"=="a")) // NOT
 
 // If / Else
 
@@ -85,35 +124,3 @@ if (semaforo2 == "verde") {
 } else {
     console.log("Atenção!")
 }
-
-// Animações com JS
-
-// Transições Simples
-
-let position = 0
-
-const box = document.getElementById("box")
-
-function moveBox() {
-    if(position < 1200) {
-        position += 10
-
-        box.style.left = position + "px"
-        requestAnimationFrame(moveBox)
-    }
-}
-
-moveBox()
-
-// Transições Controladas
-
-const button = document.getElementById("button")
-
-button.addEventListener('click',
-    function() {
-        button.classList.toggle('active')
-    }
-)
-
-// Transições com bibliotecas externas
-
