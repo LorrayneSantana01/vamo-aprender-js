@@ -1,0 +1,9 @@
+#paragrafo-html {
+    margin: 0;
+    left: 20px;
+    top: 20px;
+    font-weight: 600;
+    font-size: 60px;
+    position: absolute;
+    color: firebrick;
+}
