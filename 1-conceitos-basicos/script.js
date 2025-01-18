@@ -2,6 +2,23 @@
 
 console.log("Oiiiii")
 
+// Tipo de Dados e TypeOf
+
+var String = "Frase"
+var Inteiro = 123
+var Float = 123.01
+var Booleano = true
+
+console.log(String)
+console.log(Inteiro)
+console.log(Float)
+console.log(Booleano)
+
+console.log(typeof String)
+console.log(typeof Inteiro)
+console.log(typeof Float)
+console.log(typeof Booleano)
+
 // Variáveis
 
 var meu_nome = "Lorrayne" // valor variável
@@ -23,6 +40,18 @@ console.log(meu_salario)
 var array = ["maça", "banana", "morango"]
 
 console.log(array[2])
+
+// Trocar Informações de Variaveis
+
+var a = 5
+var b = 8
+
+let c = a
+a = b
+b = c
+
+console.log("a: " + a)
+console.log("b: " + b)
 
 // Operadores Aritméticos
 
