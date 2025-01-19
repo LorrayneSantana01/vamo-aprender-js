@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+}
+
+#relogio {
+    color: rgb(56, 56, 56);
+    font-size: 50px;
+    margin-bottom: 20px 20px;
+}
+
+#iniciar {
+    background-color: green;
+    color: white;
+    border: none;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: rgba(0, 128, 0, 0.5);
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#iniciar:hover {
+    border-color: gray;
+}
+
+#iniciar:target {
+    border-color: gray;
+}
+
+#pausar {
+    background-color: darkgoldenrod;
+    color: white;
+    border: none;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: rgba(184, 135, 11, 0.5);
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#pausar:hover {
+    border-color: gray;
+}
+
+#pausar:target {
+    border-color: gray;
+}
+
+#zerar {
+    background-color: brown;
+    color: white;
+    border: none;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: rgba(165, 42, 42, 0.5);
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#zerar:hover {
+    border-color: gray;
+}
+
+#zerar:target {
+    border-color: gray;
+}
