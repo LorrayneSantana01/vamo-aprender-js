@@ -41,6 +41,37 @@ var array = ["maça", "banana", "morango"]
 
 console.log(array[2])
 
+console.table(array)
+
+// Objetos
+
+var produto = {
+    nomeItem: "Camisa",
+    tamanho: "M",
+    preco: 49.99,
+    disponivel: true
+}
+
+console.log(produto.nomeItem)
+
+console.table(produto)
+
+// Funções
+
+function nomeDaFuncao(){
+    console.log("Oiiiii")
+}
+
+nomeDaFuncao()
+
+//Função com parâmetro
+
+function nomeDaFuncao1(nome) {
+    console.log(nome)
+}
+
+nomeDaFuncao1("Lorrayne")
+
 // Trocar Informações de Variaveis
 
 var a = 5
@@ -152,4 +183,67 @@ if (semaforo2 == "verde") {
     console.log("Pare!")
 } else {
     console.log("Atenção!")
+}
+
+// Switch Case
+
+var numero = 4
+
+switch(numero) {
+    case 1:
+        console.log('1')
+        break
+    case 2:
+        console.log('2')
+        break
+    case 3:
+        console.log('3')
+    default:
+        console.log('Numero nao encontrado')
+        break
+}
+
+// For
+
+for (let i = 0; i <= 10; i++) {
+    console.log(i)
+}
+
+// While
+
+let i = 0
+
+while(i <= 10){
+    console.log(i)
+    i++
+}
+
+//For Of
+
+var frutas = ["Maça", "Banana", "Morango"]
+
+for (let car of frutas) {
+    console.log(car)
+}
+
+// For In
+
+var pessoa = {
+    nome: "Lorrayne",
+    sobrenome: "Santana",
+    idade: "23"
+}
+
+for (let pess in pessoa) {
+    console.log(pessoa[pess])
+}
+
+// Break
+
+var x = 0
+
+while(x <= 5){
+    if (x === 2) break
+    console.log(x)
+    x++
 }
