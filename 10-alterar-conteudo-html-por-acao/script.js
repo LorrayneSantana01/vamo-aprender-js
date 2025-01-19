@@ -1,9 +1,12 @@
-const meuLorem = document.getElementById("lorem")
+window.addEventListener('DOMContentLoaded',() => {
 
-const button = document.getElementById("botao")
+    const meuLorem = document.getElementById("lorem")
 
-button.addEventListener('click',
-    function() {
-        meuLorem.innerHTML = "<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, alias.</b"
-    }
-)
+    const button = document.getElementById("botao")
+    
+    button.addEventListener('click',
+        function() {
+            meuLorem.innerHTML = "<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, alias.</b"
+        }
+    )
+})
