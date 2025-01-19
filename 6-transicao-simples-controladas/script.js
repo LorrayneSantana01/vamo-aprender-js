@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', () => {
+
 // Animações com JS
 
 // Transições Simples
@@ -26,3 +28,6 @@ button.addEventListener('click', // adiciona o evento de clicar
         button.classList.toggle('active') // chama a propriedade "active" do css
     }
 )
+
+})
+
