@@ -39,9 +39,17 @@ console.log(meu_salario)
 
 var array = ["maça", "banana", "morango"]
 
-console.log(array[2])
+console.log(array[2]) // Consulta um elemento especifico
 
-console.table(array)
+console.table(array) // Mostra a tabela formatada
+
+array.push("abacaxi") // Acrescenta um elemento no final
+
+paises.unshift("abacate") // Acrescenta um elemento no inicio
+
+paises.pop() // Remove ultimo elemento
+
+paises.shift() // Remove primeiro elemento
 
 // Objetos
 
@@ -217,6 +225,14 @@ while(i <= 10){
     console.log(i)
     i++
 }
+
+// For Each
+
+var familia = ["Lorrayne", "Marcelo", "Tereza", "Zézão"]
+
+familia.forEach(elemento => {
+    console.log(elemento)
+})
 
 //For Of
 
